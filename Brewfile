@@ -18,6 +18,7 @@ brew "tmux"
 brew "unzip"
 brew "mas"
 brew "wget"
+brew "watch"
 
 brew "tree"
 brew "bat"

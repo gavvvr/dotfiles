@@ -30,7 +30,7 @@ brew "fzf"
 brew "ncdu"
 brew "archey"
 
-cask "kitty"
+cask "alacritty"
 
 cask "docker"
 cask "kitematic"

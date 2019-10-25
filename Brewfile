@@ -28,7 +28,7 @@ brew "z"
 brew "fd"
 brew "fzf"
 brew "ncdu"
-brew "archey"
+brew "archey" # or 'screenfetch'
 
 cask "alacritty"
 

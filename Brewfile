@@ -33,6 +33,7 @@ brew "archey"
 cask "alacritty"
 
 cask "docker"
+brew "ctop"
 cask "kitematic"
 
 cask "google-chrome"

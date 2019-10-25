@@ -11,6 +11,9 @@ tap "buo/cask-upgrade"
 tap "bell-sw/liberica"
 cask "bell-sw/liberica/liberica-jdk11"
 
+brew "go"
+brew "rust"
+
 brew "coreutils"
 brew "gnupg"
 brew "htop"
@@ -28,7 +31,7 @@ brew "z"
 brew "fd"
 brew "fzf"
 brew "ncdu"
-brew "archey" # or 'screenfetch'
+brew "archey" # see also 'screenfetch'
 
 cask "alacritty"
 

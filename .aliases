@@ -1,1 +1,1 @@
-alias vpn='sudo ~/vpn.sh'
+[[ -f ~/.aliases.local ]] && . ~/.aliases.local

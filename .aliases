@@ -1,1 +1,10 @@
+case "$OSTYPE" in
+  darwin*)
+    alias ls='ls -G'
+  ;;
+  linux*)
+    alias ls='ls --color=auto'
+  ;;
+esac
+
 [[ -f ~/.aliases.local ]] && . ~/.aliases.local

@@ -1,0 +1,8 @@
+[user]
+	name = Kirill Gavrilov
+[includeIf "gitdir:~/.yadm/"]
+	path =  ~/.config/git/config-personal
+[includeIf "gitdir:~/Documents/projects"]
+	path =  ~/.config/git/config-personal
+[include]
+	path = ~/.gitconfig.local

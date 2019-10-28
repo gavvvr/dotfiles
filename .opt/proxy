@@ -1,0 +1,58 @@
+setopt shwordsplit
+
+BASEDIR=$(dirname "$0")
+# shellcheck disable=SC1090
+source "$BASEDIR"/m2_proxy_functions
+
+if [[ -z "$PROXY_HOST" || -z "$PROXY_PORT" ]]; then
+  echo "Please provide both PROXY_HOST and PROXY_PORT variables"
+  return
+fi
+
+PROXY_URL="http://$PROXY_HOST:$PROXY_PORT"
+PROXY_VARS='proxy any_proxy http_proxy https_proxy ftp_proxy PROXY ANY_PROXY HTTP_PROXY HTTPS_PROXY FTP_PROXY'
+NO_PROXY_VARS='no_proxy NO_PROXY'
+if [[ -z "$NO_PROXY_FOR" ]]; then
+  NO_PROXY_FOR='localhost,127.0.0.0/8'
+fi
+
+cmd_exists() {
+  if [ -x "$(command -v "$1")" ]; then
+    return 0
+  else
+    return 1
+  fi
+}
+
+if nslookup "$PROXY_HOST" &> /dev/null ; then
+
+  echo "proxy host is resolvable, setting proxy: $PROXY_URL"
+
+  for var in $PROXY_VARS; do
+    export "$var"="$PROXY_URL"
+  done
+
+  for var in $NO_PROXY_VARS; do
+    export "$var"="$NO_PROXY_FOR"
+  done
+
+  cmd_exists git && git config --file="${HOME}"/.gitconfig.local http.proxy "$PROXY_URL"
+  cmd_exists npm && npm config set proxy "$PROXY_URL" && npm config set https-proxy "$PROXY_URL"
+  cmd_exists yarn && yarn config set proxy "$PROXY_URL" && yarn config set https-proxy "$PROXY_URL"
+  set_m2_proxy
+
+else
+  echo "proxy not available, unsetting proxy"
+
+  # shellcheck disable=SC2034
+  all_vars="$NO_PROXY_VARS $PROXY_VARS"
+  # shellcheck disable=SC2043
+  for var in all_vars; do
+    unset "$var"
+  done
+
+  cmd_exists git && git config --file="${HOME}"/.gitconfig.local --unset http.proxy
+  cmd_exists npm && npm config rm proxy && npm config rm proxy https-proxy
+  cmd_exists yarn && yarn config set proxy '' && yarn config set https-proxy ''
+  unset_m2_proxy
+fi

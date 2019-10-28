@@ -1,0 +1,56 @@
+# Requires the presence of <proxy> in settings.xml of the following format:
+
+: '
+<settings>
+...
+    <proxies>
+        <proxy>
+            <id>proxy</id>
+            <active>false</active>
+            <protocol>http</protocol>
+            <host></host>
+            <port></port>
+            <nonProxyHosts></nonProxyHosts>
+        </proxy>
+        ...
+    </proxies>
+...
+</settings>
+'
+
+MAVEN_SETTINGS=~/.m2/settings.xml
+SED_INPLACE_AR='-i ""'
+
+set_m2_proxy() {
+  tmpfile=$(mktemp /tmp/sed-m2-script.XXXXXX)
+
+  cat >"$tmpfile" <<EOF
+/<proxy>/ {
+n
+n
+s/false/true/
+n
+n
+s#host>[^<]*</host>#host>${PROXY_HOST}</host>#
+n
+s#port>[^<]*</port>#port>${PROXY_PORT}</port>#
+n
+s#nonProxyHosts>[^<]*</nonProxyHosts>#nonProxyHosts>${NO_PROXY_FOR}</nonProxyHosts>#
+}
+EOF
+
+  sed "${SED_INPLACE_AR}" -f "${tmpfile}" "$MAVEN_SETTINGS"
+}
+
+unset_m2_proxy() {
+  tmpfile=$(mktemp /tmp/sed-m2-script.XXXXXX)
+  cat >"$tmpfile" <<EOF
+/<proxy>/ {
+n
+n
+s/true/false/
+}
+EOF
+
+  sed "${SED_INPLACE_AR}" -f "${tmpfile}" "$MAVEN_SETTINGS"
+}

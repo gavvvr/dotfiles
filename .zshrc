@@ -1,3 +1,15 @@
+export PATH=$PATH:~/.opt/bin
+
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+
+ensure_tmux_is_running
+
 HISTFILE=~/.histfile
 HISTSIZE=100000
 SAVEHIST=HISTSIZE

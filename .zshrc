@@ -1,3 +1,11 @@
+# completions system
+autoload -U +X compinit && compinit
+autoload -U +X bashcompinit && bashcompinit
+
+for function in ~/.zsh/functions/*; do
+  source $function
+done
+
 export PATH=$PATH:~/.opt/bin
 
 _not_inside_tmux() { [[ -z "$TMUX" ]] }
@@ -19,10 +27,6 @@ setopt HIST_IGNORE_ALL_DUPS
 #
 
 . ~/.aliases
-
-# completions system
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
 
 # completions
 ANTIGEN_COMPLTIONS=/usr/local/share/antigen/antigen.zsh

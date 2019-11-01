@@ -15,4 +15,5 @@ endif
 
 call plug#begin()
 Plug 'christoomey/vim-tmux-navigator'
+Plug 'tpope/vim-fugitive'
 call plug#end()

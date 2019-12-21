@@ -21,6 +21,7 @@ brew "tmux"
 brew "unzip"
 brew "mas"
 brew "wget"
+brew "jq"
 brew "watch"
 brew "reattach-to-user-namespace" # required by 'tmux-yank' plugin
 

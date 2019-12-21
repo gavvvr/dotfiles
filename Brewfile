@@ -80,6 +80,7 @@ mas "Trello", id: 1278508951
 mas "Slack", id: 803453959
 mas "Microsoft Remote Desktop", id: 1295203466
 mas "OneDrive", id: 823766827
+mas "Magnet", id: 441258766
 
 
 

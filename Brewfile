@@ -25,6 +25,7 @@ brew "jq"
 brew "watch"
 brew "reattach-to-user-namespace" # required by 'tmux-yank' plugin
 
+brew "trash"
 brew "tree"
 brew "bat"
 brew "exa"

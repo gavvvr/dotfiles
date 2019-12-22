@@ -36,6 +36,7 @@ brew "fzf"
 brew "ncdu"
 brew "archey" # see also 'screenfetch'
 
+brew "zplug"
 cask "alacritty"
 
 cask "docker"

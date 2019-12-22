@@ -1,3 +1,8 @@
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+zplug romkatv/powerlevel10k, as:theme, depth:1
+zplug load
+
 # completions system
 autoload -U +X compinit && compinit
 autoload -U +X bashcompinit && bashcompinit
@@ -53,3 +58,5 @@ export PATH=$PATH:~/Documents/tools/oracle/sqlcl/bin
 export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && . "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

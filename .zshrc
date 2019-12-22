@@ -30,9 +30,6 @@ setopt HISTIGNORESPACE
 . ~/.aliases
 
 # completions
-ANTIGEN_COMPLTIONS=/usr/local/share/antigen/antigen.zsh
-[ -f $ANTIGEN_COMPLTIONS ] && . $ANTIGEN_COMPLTIONS
-
 [ -f ~/.fzf.zsh ] && . ~/.fzf.zsh
 
 Z_COMPLETIONS=/usr/local/etc/profile.d/z.sh

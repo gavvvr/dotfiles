@@ -39,6 +39,9 @@ brew "archey" # see also 'screenfetch'
 brew "zplug"
 cask "alacritty"
 
+tap "homebrew/cask-fonts"
+cask "font-meslo-nerd-font"
+
 cask "docker"
 brew "ctop"
 cask "kitematic"

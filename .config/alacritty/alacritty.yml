@@ -574,7 +574,7 @@ colors:
 # binding with the same triggers is defined. To unset a default binding, it can
 # be mapped to the `ReceiveChar` action. Alternatively, you can use `None` for
 # a no-op if you do not wish to receive input characters for that binding.
-#key_bindings:
+key_bindings:
   # (Windows/Linux only)
   #- { key: V,        mods: Control|Shift, action: Paste            }
   #- { key: C,        mods: Control|Shift, action: Copy             }
@@ -587,6 +587,8 @@ colors:
   #- { key: Return,   mods: Alt,           action: ToggleFullscreen }
 
   # (macOS only)
+  - { key: Left,     mods: Option, chars: "\x1bb"                       }
+  - { key: Right,    mods: Option, chars: "\x1bf"                       }
   #- { key: Key0,   mods: Command,         action: ResetFontSize    }
   #- { key: Equals, mods: Command,         action: IncreaseFontSize }
   #- { key: Add,    mods: Command,         action: IncreaseFontSize }
@@ -599,7 +601,6 @@ colors:
   #- { key: Q,      mods: Command,         action: Quit             }
   #- { key: W,      mods: Command,         action: Quit             }
   #- { key: F,      mods: Command|Control, action: ToggleFullscreen }
-
   #- { key: Paste,                    action: Paste                            }
   #- { key: Copy,                     action: Copy                             }
   #- { key: L,         mods: Control, action: ClearLogNotice                   }

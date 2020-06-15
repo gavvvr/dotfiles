@@ -36,7 +36,7 @@ brew "fzf"
 brew "ncdu"
 brew "archey" # see also 'screenfetch'
 
-brew "zplug"
+# brew "zinit" # TODO: Uncomment when available https://github.com/zdharma/zinit/issues/225
 cask "alacritty"
 
 tap "homebrew/cask-fonts"

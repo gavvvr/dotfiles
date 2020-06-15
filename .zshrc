@@ -58,8 +58,7 @@ export PATH=$PATH:~/Documents/tools/oracle/sqlcl/bin
 
 # version managers
 
-. ~/.asdf/asdf.sh
-. ~/.asdf/completions/asdf.bash
+. $(brew --prefix asdf)/asdf.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"

@@ -38,6 +38,7 @@ brew "archey" # see also 'screenfetch'
 
 # brew "zinit" # TODO: Uncomment when available https://github.com/zdharma/zinit/issues/225
 cask "alacritty"
+brew "asdf"
 
 tap "homebrew/cask-fonts"
 cask "font-meslo-nerd-font"

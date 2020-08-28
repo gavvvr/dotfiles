@@ -52,8 +52,7 @@ cask "kitematic"
 
 cask "google-chrome"
 cask "grandperspective"
-# Instead of TunnelBlick use: https://openvpn.net/client-connect-vpn-for-mac-os/
-# cask "tunnelblick"
+cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-for-mac-os/
 
 
 # also allow JB ToolBox to generate shell scipts in '/usr/local/bin'

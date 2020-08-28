@@ -41,7 +41,7 @@ cask "alacritty"
 brew "asdf"
 
 tap "homebrew/cask-fonts"
-cask "font-meslolg-nerd-font"
+cask "font-meslo-lg-nerd-font"
 
 cask "docker"
 brew "ctop"

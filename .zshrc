@@ -48,9 +48,7 @@ Z_COMPLETIONS=/usr/local/etc/profile.d/z.sh
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
-export OCI_DIR=~/Documents/tools/oracle/bin
-export PATH=$PATH:$OCI_DIR
-export PATH=$PATH:~/Documents/tools/oracle/sqlcl/bin
+export OCI_DIR=$(brew --prefix)/lib
 
 # version managers
 

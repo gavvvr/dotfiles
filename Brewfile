@@ -38,6 +38,11 @@ brew "fzf"
 brew "ncdu"
 brew "archey" # see also 'screenfetch'
 
+
+brew "InstantClientTap/instantclient/instantclient-basic" # not using 'basiclite', because sqlplus requires non-lite client
+brew "InstantClientTap/instantclient/instantclient-sdk"
+# brew "InstantClientTap/instantclient/instantclient-sqlplus"
+
 # brew "zinit" # TODO: Uncomment when available https://github.com/zdharma/zinit/issues/225
 cask "alacritty"
 brew "asdf"

@@ -14,6 +14,8 @@ cask "bell-sw/liberica/liberica-jdk11"
 brew "go"
 brew "rust"
 
+brew "svn" # No longer included with xcode tools
+
 brew "coreutils"
 brew "gnupg"
 brew "htop"
@@ -39,6 +41,7 @@ brew "archey" # see also 'screenfetch'
 # brew "zinit" # TODO: Uncomment when available https://github.com/zdharma/zinit/issues/225
 cask "alacritty"
 brew "asdf"
+brew "gpg" # required to start using asdf nodejs plugin
 
 tap "homebrew/cask-fonts"
 cask "font-meslo-lg-nerd-font"

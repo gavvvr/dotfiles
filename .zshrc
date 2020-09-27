@@ -24,7 +24,9 @@ ensure_tmux_is_running() {
   fi
 }
 
-ensure_tmux_is_running
+if [ "$TERM_PROGRAM" = "Alacritty" ]; then
+  ensure_tmux_is_running
+fi
 
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -53,7 +55,7 @@ export OCI_DIR=$(brew --prefix)/lib
 # version managers
 
 ASDF_INSTALL_PATH=~/.asdf
-[ -f $ASDF_INSTALL_PATH ] && . $ASDF_INSTALL_PATH/asdf.sh && . $ASDF_INSTALL_PATH/completions/asdf.bash
+[ -d $ASDF_INSTALL_PATH ] && . $ASDF_INSTALL_PATH/asdf.sh && . $ASDF_INSTALL_PATH/completions/asdf.bash
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"

@@ -1,3 +1,17 @@
+export PATH=$PATH:~/.opt/bin
+
+_not_inside_tmux() { [[ -z "$TMUX" ]] }
+
+ensure_tmux_is_running() {
+  if _not_inside_tmux; then
+    tat
+  fi
+}
+
+if [ "$TERM_PROGRAM" = "Alacritty" ]; then
+  ensure_tmux_is_running
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block, everything else may go below.
@@ -13,20 +27,6 @@ autoload -U +X bashcompinit && bashcompinit
 for function in ~/.zsh/functions/*; do
   source $function
 done
-
-export PATH=$PATH:~/.opt/bin
-
-_not_inside_tmux() { [[ -z "$TMUX" ]] }
-
-ensure_tmux_is_running() {
-  if _not_inside_tmux; then
-    tat
-  fi
-}
-
-if [ "$TERM_PROGRAM" = "Alacritty" ]; then
-  ensure_tmux_is_running
-fi
 
 HISTFILE=~/.histfile
 HISTSIZE=100000

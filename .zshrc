@@ -52,7 +52,8 @@ export OCI_DIR=$(brew --prefix)/lib
 
 # version managers
 
-. $(brew --prefix asdf)/asdf.sh
+ASDF_INSTALL_PATH=~/.asdf
+[ -f $ASDF_INSTALL_PATH ] && . $ASDF_INSTALL_PATH/asdf.sh && . $ASDF_INSTALL_PATH/completions/asdf.bash
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/$USER/.sdkman"

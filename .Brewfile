@@ -27,6 +27,8 @@ brew "jq"
 brew "watch"
 brew "reattach-to-user-namespace" # required by 'tmux-yank' plugin
 
+cask "alfred"
+
 brew "trash"
 brew "tree"
 brew "bat"
@@ -55,6 +57,8 @@ cask "docker"
 brew "ctop"
 cask "kitematic"
 
+cask "virtualbox"
+
 cask "google-chrome"
 cask "grandperspective"
 cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-for-mac-os/
@@ -63,6 +67,7 @@ cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-fo
 # also allow JB ToolBox to generate shell scipts in '/usr/local/bin'
 cask "jetbrains-toolbox"
 cask "sublime-text"
+cask "obsidian"
 cask "visual-studio-code"
 cask "insomnia"
 
@@ -84,6 +89,9 @@ cask "discord"
 
 cask "microsoft-teams"
 cask "skype-for-business"
+
+# See https://github.com/chef/homebrew-chef for more
+cask "chef/chef/chefdk"
 
 cask "coconutbattery"
 mas "Disk Speed Test", id: 425264550

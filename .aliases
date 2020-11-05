@@ -1,3 +1,9 @@
+alias be="bundle exec"
+
+mcd () {
+  mkdir "$1" && cd "$1"
+}
+
 case "$OSTYPE" in
   darwin*)
     alias ls='ls -G'

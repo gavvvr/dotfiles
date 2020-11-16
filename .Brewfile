@@ -14,7 +14,7 @@ tap "buo/cask-upgrade"
 #################
 
 cask "alfred"
-mas "Magnet", id: 441258766
+cask "rectangle"
 
 cask "google-chrome"
 cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-for-mac-os/

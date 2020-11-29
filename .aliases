@@ -4,6 +4,44 @@ mcd () {
   mkdir "$1" && cd "$1"
 }
 
+ffcut() {
+  usage_msg="Example usage: ffcut \$IN_FILE 00:01:23-00:59:59 \$OUT_FILE"
+
+  if [ -z "$1" ]; then
+    echo "$usage_msg"
+    return 0
+  fi
+
+  in_file=$1
+  IFS="-" read -r start_stamp end_stamp <<< "$2"
+
+  if [[ -z $start_stamp && -z $end_stamp ]]; then
+    echo "$usage_msg"
+    return 1
+  fi
+
+  if [ -n "$3" ]; then
+    out_file="$3"
+  else
+    extension="${in_file##*.}"
+    filename="${in_file%.*}"
+    out_file="${filename}_cut.$extension"
+  fi
+
+  args=( "-i" "$in_file" "-c" "copy" )
+  if [ -n "$start_stamp" ]; then
+    args+=( "-ss" "$start_stamp" )
+  fi
+  if [ -n "$end_stamp" ]; then
+    args+=( "-to" "$end_stamp" )
+  fi
+  args+=( "$out_file" )
+
+  set -x
+  ffmpeg "${args[@]}"
+  set +x
+}
+
 case "$OSTYPE" in
   darwin*)
     alias ls='ls -G'

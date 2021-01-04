@@ -2,7 +2,7 @@
 	name = Kirill Gavrilov
 [include]
 	path = ~/.gitconfig.local
-[includeIf "gitdir:~/.config/yadm/"]
+[includeIf "gitdir:~/.local/share/yadm/"]
 	path = ~/.config/git/config-personal
 [includeIf "gitdir:~/Documents/projects/"]
 	path = ~/.config/git/config-personal

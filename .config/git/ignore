@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+
+*.sw[nop]
+
+.env
+/log
+log/*.log
+/tmp
+tmp/**/*
+
+/node_modules/

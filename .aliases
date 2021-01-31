@@ -1,3 +1,5 @@
+alias l="exa -l --git"
+
 alias be="bundle exec"
 
 mcd () {

@@ -19,14 +19,19 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+source ~/zsh-snap/znap.zsh
+znap source zsh-users/zsh-autosuggestions
+znap source marlonrichert/zsh-autocomplete
+znap source romkatv/powerlevel10k
+
 
 # completions system
-autoload -U +X compinit && compinit
-autoload -U +X bashcompinit && bashcompinit
+# autoload -U +X compinit && compinit
+# autoload -U +X bashcompinit && bashcompinit
 
-for function in ~/.zsh/functions/*; do
-  source $function
-done
+# for function in ~/.zsh/functions/*; do
+#   source $function
+# done
 
 HISTFILE=~/.histfile
 HISTSIZE=100000
@@ -61,30 +66,42 @@ ASDF_INSTALL_PATH=~/.asdf
 export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && . "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-### Added by Zinit's installer
-if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
-    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
-    command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
-    command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
-        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
-        print -P "%F{160}▓▒░ The clone has failed.%f%b"
-fi
+for function in ~/.zsh/functions/*.zsh; do
+  source $function
+done
 
-source "$HOME/.zinit/bin/zinit.zsh"
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
+# ## Added by Zinit's installer
+# if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+#     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+#     command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+#     command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+#         print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+#         print -P "%F{160}▓▒░ The clone has failed.%f%b"
+# fi
 
-# Load a few important annexes, without Turbo
-# (this is currently required for annexes)
-zinit light-mode for \
-    zinit-zsh/z-a-as-monitor \
-    zinit-zsh/z-a-patch-dl \
-    zinit-zsh/z-a-bin-gem-node
+# source "$HOME/.zinit/bin/zinit.zsh"
+# autoload -Uz _zinit
+# (( ${+_comps} )) && _comps[zinit]=_zinit
 
-### End of Zinit's installer chunk
+# # Load a few important annexes, without Turbo
+# # (this is currently required for annexes)
+# zinit light-mode for \
+#     zinit-zsh/z-a-as-monitor \
+#     zinit-zsh/z-a-patch-dl \
+#     zinit-zsh/z-a-bin-gem-node
 
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+# ## End of Zinit's installer chunk
 
+# zinit ice depth=1; 
+# zinit load romkatv/powerlevel10k
+
+export _ZO_ECHO=1
+export _ZO_DATA_DIR="$HOME/.cache/zoxide/"
+eval "$(zoxide init zsh)"
+
+
+znap source zsh-users/zsh-syntax-highlighting

@@ -15,6 +15,7 @@ tap "buo/cask-upgrade"
 
 cask "alfred"
 cask "rectangle"
+mas "Hidden Bar", id:1452453066
 
 cask "google-chrome"
 cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-for-mac-os/

@@ -45,6 +45,14 @@ setopt HISTIGNORESPACE
 Z_COMPLETIONS=/usr/local/etc/profile.d/z.sh
 [ -f $Z_COMPLETIONS ] && . $Z_COMPLETIONS
 
+# zoxide
+
+export _ZO_DATA_DIR="$HOME/.cache/zoxide/"
+
+eval "$(zoxide init zsh)"
+zle -N zoxide-zi-widget __zoxide_zi
+bindkey '^Z' zoxide-zi-widget
+
 # $PATH
 
 export GOPATH=$HOME/go

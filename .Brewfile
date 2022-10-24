@@ -60,7 +60,7 @@ brew "exa"
 # brew "jq"
 brew "fd"
 brew "ripgrep"
-brew "z"
+brew "zoxide"
 brew "fzf"
 brew "ncdu"
 brew "archey" # see also 'screenfetch'

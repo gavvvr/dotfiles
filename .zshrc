@@ -40,7 +40,7 @@ setopt HISTIGNORESPACE
 . ~/.aliases
 
 # completions
-[ -f ~/.fzf.zsh ] && . ~/.fzf.zsh
+[ -f ~/.zsh/.fzf.zsh ] && . ~/.zsh/.fzf.zsh
 
 Z_COMPLETIONS=/usr/local/etc/profile.d/z.sh
 [ -f $Z_COMPLETIONS ] && . $Z_COMPLETIONS
@@ -62,7 +62,7 @@ export SDKMAN_DIR="/Users/$USER/.sdkman"
 [[ -s "/Users/$USER/.sdkman/bin/sdkman-init.sh" ]] && . "/Users/$USER/.sdkman/bin/sdkman-init.sh"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zsh/.p10k.zsh ]] || source ~/.zsh/.p10k.zsh
 
 # Download Znap, if it's not there yet.
 [[ -f ~/.zsh-snap/znap.zsh ]] ||

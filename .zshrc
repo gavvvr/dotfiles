@@ -50,8 +50,8 @@ Z_COMPLETIONS=/usr/local/etc/profile.d/z.sh
 export _ZO_DATA_DIR="$HOME/.cache/zoxide/"
 
 eval "$(zoxide init zsh)"
-zle -N zoxide-zi-widget __zoxide_zi
-bindkey '^Z' zoxide-zi-widget
+zle -N fzf-cd-zoxide
+bindkey '^Z' fzf-cd-zoxide
 
 # $PATH
 

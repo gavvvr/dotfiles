@@ -4,6 +4,11 @@ env:
 window:
   decorations: none
 
+key_bindings:
+  # (macOS only)
+  - { key: Left,     mods: Option, chars: "\x1bb"                       }
+  - { key: Right,    mods: Option, chars: "\x1bf"                       }
+
 font:
   normal:
     family: MesloLGS Nerd Font
@@ -50,9 +55,3 @@ colors:
     - { index: 19, color: '0x7ea2b4' }
     - { index: 20, color: '0x5a7b8c' }
     - { index: 21, color: '0x1f292e' }
-
-
-key_bindings:
-  # (macOS only)
-  - { key: Left,     mods: Option, chars: "\x1bb"                       }
-  - { key: Right,    mods: Option, chars: "\x1bf"                       }

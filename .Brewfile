@@ -110,6 +110,11 @@ cask "docker"
 brew "ctop"
 # cask "kitematic"
 
+brew "k9s"
+brew "stern"
+brew "azure-cli"
+
+
 # cask "virtualbox"
 
 cask "grandperspective"

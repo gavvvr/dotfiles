@@ -65,6 +65,7 @@ brew "fd"
 brew "ripgrep"
 brew "zoxide"
 brew "fzf"
+brew "tldr"
 brew "ncdu"
 brew "archey" # see also 'screenfetch'
 

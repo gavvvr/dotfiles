@@ -21,6 +21,8 @@ mas "Hidden Bar", id:1452453066
 cask "google-chrome"
 cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-for-mac-os/
 cask "keepassxc"
+cask "ticktick"
+cask "standard-notes"
 mas "Telegram", id: 747648890
 mas "Trello", id: 1278508951
 
@@ -78,6 +80,10 @@ brew "gnupg"
 tap "bell-sw/liberica"
 cask "liberica-jdk11-full"
 
+cask "mongodb-compass"
+
+brew "git-sizer"
+
 # brew "go"
 # brew "rust"
 
@@ -123,10 +129,12 @@ cask "grandperspective"
 # brew "asciinema"
 cask "licecap"
 
+
 brew "ffmpeg"
 brew "youtube-dl"
 # cask "mkvtoolnix"
 
+brew "android-file-transfer"
 cask "deezer"
 cask "mpv"
 # cask "qbittorrent"

@@ -19,11 +19,14 @@ cask "mos"
 mas "Hidden Bar", id:1452453066
 
 cask "google-chrome"
+# cask "firefox"
 cask "tunnelblick" # You can also use: https://openvpn.net/client-connect-vpn-for-mac-os/
 cask "keepassxc"
 cask "ticktick"
+# cask "dynalist"
 cask "standard-notes"
 mas "Telegram", id: 747648890
+# mas "WhatsApp Desktop", id: 1147396723
 mas "Trello", id: 1278508951
 
 # also allow JB ToolBox to generate shell scipts in '/usr/local/bin'
@@ -145,6 +148,7 @@ cask "mpv"
 mas "Vimari", id: 1480933944
 
 cask "coconutbattery"
+cask "hot"
 # mas "Disk Speed Test", id: 425264550
 
 

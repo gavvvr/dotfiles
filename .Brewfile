@@ -15,6 +15,7 @@ tap "buo/cask-upgrade"
 
 cask "alfred"
 cask "rectangle"
+cask "mos"
 mas "Hidden Bar", id:1452453066
 
 cask "google-chrome"

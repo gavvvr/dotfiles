@@ -59,6 +59,9 @@ brew "unzip"
 brew "wget"
 brew "watch"
 
+brew "git-lfs"
+# Additional manual step: `git lfs install` or `git lfs install --system`
+
 brew "trash"
 brew "tree"
 # brew "bat"

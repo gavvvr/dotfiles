@@ -133,6 +133,8 @@ cask "licecap"
 
 brew "ffmpeg"
 brew "yt-dlp"
+# cask "kap"
+# cask "keycastr"
 # cask "mkvtoolnix"
 
 brew "android-file-transfer"

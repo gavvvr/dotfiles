@@ -113,6 +113,7 @@ mas "Slack", id: 803453959
 cask "skype"
 cask "discord"
 # cask "microsoft-teams"
+cask "zoom"
 
 
 #################

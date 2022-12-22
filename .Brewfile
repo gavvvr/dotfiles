@@ -143,7 +143,7 @@ brew "yt-dlp"
 # cask "keycastr"
 # cask "mkvtoolnix"
 
-brew "android-file-transfer"
+cask "android-file-transfer"
 cask "deezer"
 cask "mpv"
 # cask "qbittorrent"

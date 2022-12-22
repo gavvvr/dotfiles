@@ -85,7 +85,7 @@ brew "coreutils"
 brew "gnupg"
 
 tap "bell-sw/liberica"
-cask "liberica-jdk11-full"
+cask "liberica-jdk17-full"
 
 cask "mongodb-compass"
 

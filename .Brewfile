@@ -73,7 +73,7 @@ brew "zoxide"
 brew "fzf"
 brew "tldr"
 brew "ncdu"
-brew "archey" # see also 'screenfetch'
+brew "neofetch"
 
 
 #################

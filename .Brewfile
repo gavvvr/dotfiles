@@ -128,6 +128,7 @@ brew "k9s"
 brew "stern"
 brew "azure-cli"
 
+brew "earthly"
 
 # cask "virtualbox"
 

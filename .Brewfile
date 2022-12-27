@@ -36,6 +36,7 @@ cask "obsidian"
 
 mas "OneDrive", id: 823766827
 mas "Microsoft Remote Desktop", id: 1295203466
+# cask "citrix-workspace"
 
 
 #################
@@ -155,12 +156,3 @@ mas "Vimari", id: 1480933944
 cask "coconutbattery"
 cask "hot"
 # mas "Disk Speed Test", id: 425264550
-
-
-#################
-# Notes
-#################
-
-# Citrix workspace can't be installed with brew, see:
-# https://github.com/Homebrew/homebrew-cask/pull/56881
-# Download manually from: https://www.citrix.com/downloads/workspace-app/

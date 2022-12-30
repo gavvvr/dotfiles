@@ -123,6 +123,7 @@ cask "zoom"
 
 cask "docker"
 brew "ctop"
+brew "dive"
 # cask "kitematic"
 
 brew "k9s"

@@ -16,6 +16,7 @@ tap "buo/cask-upgrade"
 cask "alfred"
 cask "rectangle"
 cask "mos"
+cash "sensible-side-buttons" # enable mouse side buttons in Mac apps: Finder, Safari, etc
 mas "Hidden Bar", id:1452453066
 
 cask "google-chrome"

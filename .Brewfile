@@ -119,6 +119,7 @@ cask "skype"
 cask "discord"
 # cask "microsoft-teams"
 cask "zoom"
+mas "MeetingBar", id: 1532419400
 
 
 #################

@@ -130,7 +130,6 @@ mas "MeetingBar", id: 1532419400
 cask "docker"
 brew "ctop"
 brew "dive"
-# cask "kitematic"
 
 # brew "kind"
 brew "k9s"

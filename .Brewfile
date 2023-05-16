@@ -78,6 +78,7 @@ brew "fzf"
 brew "tldr"
 brew "ncdu"
 brew "neofetch"
+brew "archey4"
 
 
 #################
@@ -159,4 +160,5 @@ mas "Vimari", id: 1480933944
 
 cask "coconutbattery"
 cask "hot"
+mas "RunCat", id: 1429033973
 # mas "Disk Speed Test", id: 425264550

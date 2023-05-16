@@ -110,6 +110,31 @@ brew "git-sizer"
 # brew "InstantClientTap/instantclient/instantclient-sdk"
 # brew "InstantClientTap/instantclient/instantclient-sqlplus"
 
+#################
+# Docker tools
+#################
+
+cask "docker"
+cask "earthly"
+brew "ctop"
+brew "dive"
+
+
+#################
+# Kubernetes tools
+#################
+
+# brew "kind"
+brew "k9s"
+brew "stern"
+
+
+#################
+# Azure tools
+#################
+brew "azure-cli"
+brew "kubelogin"
+
 
 #################
 # Communications
@@ -126,18 +151,6 @@ mas "MeetingBar", id: 1532419400
 #################
 # Other
 #################
-
-cask "docker"
-brew "ctop"
-brew "dive"
-
-# brew "kind"
-brew "k9s"
-brew "stern"
-brew "azure-cli"
-brew "kubelogin"
-
-brew "earthly"
 
 # cask "virtualbox"
 

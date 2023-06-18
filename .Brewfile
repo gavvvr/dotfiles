@@ -133,7 +133,7 @@ brew "stern"
 # Azure tools
 #################
 brew "azure-cli"
-brew "kubelogin"
+brew "Azure/kubelogin/kubelogin"
 
 
 #################

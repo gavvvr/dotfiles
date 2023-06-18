@@ -115,7 +115,7 @@ brew "git-sizer"
 #################
 
 cask "docker"
-cask "earthly"
+brew "earthly"
 brew "ctop"
 brew "dive"
 

@@ -1,7 +1,7 @@
 [user]
 	name = Kirill Gavrilov
 [include]
-	path = ~/.gitconfig.local
+	path = ~/.config/git/config-local
 [includeIf "gitdir:~/.local/share/yadm/"]
 	path = ~/.config/git/config-personal
 [includeIf "gitdir:~/Documents/projects/"]

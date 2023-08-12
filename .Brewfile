@@ -98,6 +98,9 @@ cask "mongodb-compass"
 
 brew "git-sizer"
 
+brew "shellcheck"
+brew "shfmt"
+
 # brew "go"
 # brew "rust"
 

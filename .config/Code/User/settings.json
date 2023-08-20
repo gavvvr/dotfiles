@@ -1,4 +1,5 @@
 {
 	"terminal.integrated.fontFamily": "MesloLGS Nerd Font",
 	"telemetry.telemetryLevel": "off",
+	"editor.formatOnSave": true,
 }

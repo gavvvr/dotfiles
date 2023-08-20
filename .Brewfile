@@ -180,5 +180,6 @@ mas "Vimari", id: 1480933944
 
 cask "coconutbattery"
 cask "hot"
+cask "sloth"
 mas "RunCat", id: 1429033973
 # mas "Disk Speed Test", id: 425264550

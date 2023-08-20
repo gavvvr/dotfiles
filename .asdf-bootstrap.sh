@@ -9,3 +9,4 @@ asdf global ruby latest
 # sudo apt install -y curl dirmngr gpg
 asdf plugin add nodejs
 asdf install nodejs lts
+asdf global nodejs lts

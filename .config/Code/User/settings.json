@@ -1,5 +1,7 @@
 {
 	"terminal.integrated.fontFamily": "MesloLGS Nerd Font",
+	"workbench.colorTheme": "Default Light Modern",
+	"workbench.iconTheme": "material-icon-theme",
 	"telemetry.telemetryLevel": "off",
 	"editor.formatOnSave": true,
 }

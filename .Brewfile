@@ -46,7 +46,6 @@ mas "Microsoft Remote Desktop", id: 1295203466
 # Terminal
 #################
 
-# brew "zinit" # Consider uncommenting when available https://github.com/zdharma/zinit/issues/225
 cask "alacritty"
 brew "tmux"
 brew "reattach-to-user-namespace" # required by 'tmux-yank' plugin

@@ -87,10 +87,6 @@ brew "archey4"
 # Dev Tools
 #################
 
-# required to start using asdf nodejs plugin https://github.com/asdf-vm/asdf-nodejs
-brew "coreutils"
-brew "gnupg"
-
 tap "bell-sw/liberica"
 cask "liberica-jdk17-full"
 

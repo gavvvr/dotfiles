@@ -8,3 +8,7 @@ killall Dock
 
 # Disable shortcut (double-fn by default) for enabling dictation
 defaults write com.apple.HIToolbox AppleDictationAutoEnable -int 0
+
+# faster keyboard response
+defaults write -g InitialKeyRepeat -int 15
+defaults write -g KeyRepeat -int 2

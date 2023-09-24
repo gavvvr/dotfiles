@@ -40,7 +40,7 @@ setopt HISTIGNORESPACE
 . ~/.aliases
 
 # completions
-[ -f ~/.zsh/.fzf.zsh ] && . ~/.zsh/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 Z_COMPLETIONS=/usr/local/etc/profile.d/z.sh
 [ -f $Z_COMPLETIONS ] && . $Z_COMPLETIONS

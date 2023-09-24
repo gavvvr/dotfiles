@@ -76,6 +76,7 @@ brew "fd"
 brew "ripgrep"
 brew "zoxide"
 brew "fzf"
+# do not forget to execute: $(brew --prefix)/opt/fzf/install
 brew "tldr"
 brew "ncdu"
 brew "neofetch"

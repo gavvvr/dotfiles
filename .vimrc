@@ -17,3 +17,9 @@ call plug#begin()
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 call plug#end()
+
+noremap <Up> <Nop> 
+noremap <Down> <Nop> 
+noremap <Left> <Nop> 
+noremap <Right> <Nop>
+

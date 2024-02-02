@@ -22,8 +22,8 @@ mas "Hidden Bar", id:1452453066
 cask "google-chrome"
 # cask "firefox"
 # cask "tunnelblick" # Open-source OpenVPN-only client
-cask "openvpn-connect" # Official OpenVPN Client
-# mas "Passepartout, VPN Client", id: 1433648537 # Open-source OpenVpn + Wireguard client
+# cask "openvpn-connect" # Official OpenVPN Client
+mas "Passepartout, VPN Client", id: 1433648537 # Open-source OpenVpn + Wireguard client
 cask "keepassxc"
 cask "ticktick"
 # cask "dynalist"

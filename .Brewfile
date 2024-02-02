@@ -16,11 +16,11 @@ tap "buo/cask-upgrade"
 cask "alfred"
 cask "rectangle"
 cask "mos"
-cash "sensible-side-buttons" # enable mouse side buttons in Mac apps: Finder, Safari, etc
+# cash "sensible-side-buttons" # enable mouse side buttons in Mac apps: Finder, Safari, etc
 mas "Hidden Bar", id:1452453066
 
 cask "google-chrome"
-# cask "firefox"
+cask "firefox"
 # cask "tunnelblick" # Open-source OpenVPN-only client
 # cask "openvpn-connect" # Official OpenVPN Client
 mas "Passepartout, VPN Client", id: 1433648537 # Open-source OpenVpn + Wireguard client
@@ -32,7 +32,7 @@ cask "ticktick"
 cask "standard-notes"
 mas "Telegram", id: 747648890
 # mas "WhatsApp Desktop", id: 1147396723
-mas "Trello", id: 1278508951
+# mas "Trello", id: 1278508951
 
 # also allow JB ToolBox to generate shell scipts in '/usr/local/bin'
 cask "jetbrains-toolbox"
@@ -40,7 +40,7 @@ cask "visual-studio-code"
 cask "obsidian"
 
 mas "OneDrive", id: 823766827
-mas "Microsoft Remote Desktop", id: 1295203466
+# mas "Microsoft Remote Desktop", id: 1295203466
 # cask "citrix-workspace"
 
 
@@ -70,7 +70,7 @@ brew "diff-so-fancy"
 
 brew "trash"
 brew "tree"
-# brew "bat"
+brew "bat"
 brew "exa"
 # brew "jq"
 # brew "yq"
@@ -81,18 +81,18 @@ brew "fzf"
 # do not forget to execute: $(brew --prefix)/opt/fzf/install
 brew "tldr"
 brew "ncdu"
-brew "neofetch"
-brew "archey4"
+# brew "neofetch"
+# brew "archey4"
 
 
 #################
 # Dev Tools
 #################
 
-tap "bell-sw/liberica"
-cask "liberica-jdk17-full"
+# tap "bell-sw/liberica"
+# cask "liberica-jdk17-full"
 
-cask "mongodb-compass"
+# cask "mongodb-compass"
 
 brew "git-sizer"
 
@@ -118,7 +118,7 @@ brew "shfmt"
 
 cask "docker"
 # cask "rancher"
-brew "earthly"
+# brew "earthly"
 brew "ctop"
 brew "dive"
 
@@ -128,24 +128,24 @@ brew "dive"
 #################
 
 # brew "kind"
-brew "k9s"
-brew "stern"
+# brew "k9s"
+# brew "stern"
 
 
 #################
 # Azure tools
 #################
-brew "azure-cli"
-brew "Azure/kubelogin/kubelogin"
+# brew "azure-cli"
+# brew "Azure/kubelogin/kubelogin"
 
 
 #################
 # Communications
 #################
 
-mas "Slack", id: 803453959
-cask "skype"
-cask "discord"
+# mas "Slack", id: 803453959
+# cask "skype"
+# cask "discord"
 # cask "microsoft-teams"
 cask "zoom"
 mas "MeetingBar", id: 1532419400
@@ -155,7 +155,7 @@ mas "MeetingBar", id: 1532419400
 # Other
 #################
 
-# cask "utm"
+cask "utm"
 # cask "virtualbox"
 
 cask "grandperspective"
@@ -179,7 +179,7 @@ cask "iina"
 mas "Vimari", id: 1480933944
 
 cask "coconutbattery"
-cask "hot"
+# cask "hot"
 cask "sloth"
 mas "RunCat", id: 1429033973
 # mas "Disk Speed Test", id: 425264550

@@ -169,7 +169,7 @@ brew "yt-dlp"
 
 cask "android-file-transfer"
 cask "deezer"
-cask "mpv"
+cask "iina"
 # cask "qbittorrent"
 
 mas "Vimari", id: 1480933944

@@ -115,6 +115,7 @@ brew "shfmt"
 #################
 
 cask "docker"
+# cask "rancher"
 brew "earthly"
 brew "ctop"
 brew "dive"

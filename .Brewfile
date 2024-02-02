@@ -24,6 +24,8 @@ cask "google-chrome"
 # cask "tunnelblick" # Open-source OpenVPN-only client
 # cask "openvpn-connect" # Official OpenVPN Client
 mas "Passepartout, VPN Client", id: 1433648537 # Open-source OpenVpn + Wireguard client
+# mas "Outline-Secure internet access", id: 1356178125
+# mas "Tailscale", id: 1475387142
 cask "keepassxc"
 cask "ticktick"
 # cask "dynalist"

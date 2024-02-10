@@ -60,7 +60,6 @@ cask "font-meslo-lg-nerd-font"
 #################
 
 brew "htop"
-brew "unzip"
 brew "wget"
 brew "watch"
 

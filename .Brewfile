@@ -27,7 +27,7 @@ mas "Passepartout, VPN Client", id: 1433648537 # Open-source OpenVpn + Wireguard
 # mas "Outline-Secure internet access", id: 1356178125
 # mas "Tailscale", id: 1475387142
 cask "keepassxc"
-cask "ticktick"
+mas "TickTick:To-Do List, Calendar", id: 966085870
 # cask "dynalist"
 cask "standard-notes"
 mas "Telegram", id: 747648890

@@ -33,6 +33,7 @@ cask "standard-notes"
 mas "Telegram", id: 747648890
 # mas "WhatsApp Desktop", id: 1147396723
 # mas "Trello", id: 1278508951
+# mas "The Unarchiver", id: 425424353
 
 # also allow JB ToolBox to generate shell scipts in '/usr/local/bin'
 cask "jetbrains-toolbox"

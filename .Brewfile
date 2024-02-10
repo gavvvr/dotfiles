@@ -66,7 +66,6 @@ brew "watch"
 
 brew "git-lfs"
 brew "diff-so-fancy"
-# Additional manual step: `git lfs install` or `git lfs install --system`
 
 brew "trash"
 brew "tree"

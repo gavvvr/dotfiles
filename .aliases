@@ -1,4 +1,4 @@
-alias l="exa -l --git"
+alias l="eza -l --git"
 
 alias be="bundle exec"
 

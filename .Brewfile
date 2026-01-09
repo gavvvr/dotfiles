@@ -31,7 +31,7 @@ mas "TickTick:To-Do List, Calendar", id: 966085870
 # cask "dynalist"
 cask "standard-notes"
 mas "Telegram", id: 747648890
-# mas "WhatsApp Desktop", id: 1147396723
+# mas "WhatsApp Desktop", id: 310633997
 # mas "Trello", id: 1278508951
 # mas "The Unarchiver", id: 425424353
 
